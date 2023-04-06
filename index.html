@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+<div class="wrapper">
+  <main>
+    <div class="sec-one flex">
+      <div class="container">
+        <label for="day" id="day-label">Day</label>
+        <input type="text" id="day-input" placeholder="DD" maxlength="2">
+        <p class="warning" id="warning-dd">Must be a valid day</p>
+      </div>
+
+      <div class="container flex">
+        <label for="month" id="month-label">Month</label>
+        <input type="text" id="month-input" placeholder="MM" maxlength="2">
+        <p class="warning" id="warning-mm">Must be a valid month</p>
+      </div>
+
+      <div class="container">
+        <label for="year" id="year-label">Year</label>
+        <input type="text" id="year-input" placeholder="YYYY" maxlength="4">
+        <p class="warning" id="warning-yyyy">Must be in the past</p>
+      </div>
+
+    </div>
+
+    <div class="sec-two">
+      <hr>
+      <button class="arrow flex" onclick="subDate()">
+        <img class="img" src="./assets/images/icon-arrow.svg" alt="">
+      </button>
+    </div>
+
+    <div class="sec-three">
+      <span id="years-output">--</span><span id="y-text"> years</span><br>
+      <span id="months-output">--</span><span id="m-text"> months</span><br>
+      <span id="days-output">--</span><span id="d-text"> days</span><br>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
